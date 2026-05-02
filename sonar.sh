@@ -6,8 +6,11 @@ unzip sonarqube-8.9.6.50800.zip
 yum install java-17-amazon-corretto -y
 useradd sonar
 chown sonar:sonar sonarqube-8.9.6.50800 -R
+or 
 chmod 777 sonarqube-8.9.6.50800 -R
 su - sonar
+./sonar.sh start
+./sonar.sh status
 
 #run this on server manually
 #sh /opt/sonarqube-8.9.6.50800/bin/linux/sonar.sh start
